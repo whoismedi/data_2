@@ -10,7 +10,7 @@ def lcm(x:int, y:int) -> int:
     return abs(x * y) // math.gcd(x,y)
     
 
-@app.get("/madina_meiramova_2001_gmail_com/lcm", response_class=PlainTextResponse)
+@app.get("/madina_meiramova_2001_gmail_com", response_class=PlainTextResponse)
 def compute_lcm(x:str=Query(...), y:str=Query(...)):
     try:
         x_int = int(x)
