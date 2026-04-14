@@ -11,7 +11,7 @@ def lcm(x:int, y:int) -> int:
     
 
 @app.get("/madina_meiramova_2001_gmail_com", response_class=PlainTextResponse)
-def compute_lcm(x:str=Query(...), y:str=Query(...)):
+def compute_lcm(x:str=None, y:str=None):
     try:
         x_int = int(x)
         y_int = int(y)
